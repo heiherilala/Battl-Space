@@ -1,0 +1,127 @@
+body{
+    /*border: 1px brown solid;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    transform: scale(5);
+}
+#enblobe{
+    width:850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+#bodyGame{
+    background-position: 0% 100%;
+    width:500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: 100% 3000px;
+    background-image: url('image/gamem.jpg');
+    animation: defile 100s infinite linear;
+    /*transform: rotate(30deg);*/
+}
+.noActiv{
+    display: none !important;
+}
+#EnTete{
+    background-position: 0% 100%;
+    width:500px;
+    height: 500px;
+}
+
+#EnTete,#scoreGame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@keyframes defile {
+    from {background-position: 0% 0px;}
+    to {background-position: 0% 1500px;}
+    }
+
+#bodyGame div{
+    width: 6%;
+    height: 6%;
+    border: rgba(255, 255, 255, 0) 1px solid;
+    flex: none;
+}
+
+.playeur2{
+    background-image: url('image/alienveseau.png');
+    background-size: 150% 150%;
+    background-position: center;
+    transform: scale(2);
+}
+.explosionGame{
+    background-image: url('image/expod.png');
+    background-size: 150% 150%;
+    background-position: center;
+}
+
+.micilame{
+    background-image: url('image/micil.png');
+    background-size: 100% 100%;
+}
+.alierGame{
+    background-image: url('image/aliervaiseau.png');
+    background-size: 150% 150%;
+    background-position: center;
+    transform: scale(2);
+}
+
+#expication{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.touche1,.touche2{
+    margin: 0%;
+    padding: 0%;;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 220px;
+    height: 220px;
+}
+.touche1{background-image: url("image/touche1.png");}
+.touche2{background-image: url("image/touche2.png");}
+
+
+#expication div{
+    margin: 0%;
+    padding: 0%;
+    font-size: larger;
+    color: brown;
+    font-weight: bold;
+}
+.forflex{
+    float: inline-start;
+}
+
+.up{
+    transform: rotate(360deg);
+}
+.rigth{
+    transform: rotate(90deg);
+}
+.down{
+    transform: rotate(180deg);
+}
+.left{
+    transform: rotate(270deg);
+}
