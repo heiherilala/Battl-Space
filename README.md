@@ -1,2 +1,2 @@
 # Battle-Space
-A project of in one VS one
+A project of game in one VS one
